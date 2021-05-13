@@ -20,7 +20,7 @@ steps:
     location: 'Central US'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json?token=AJLC4JDLSDBBBRPWKVSU5ITATWKBO'
-    overrideParameters: '-projectName [EnterAProjectName]'
+    overrideParameters: '-projectName TsarasAzureTemplate'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
 
