@@ -1,7 +1,4 @@
 # Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - master
@@ -12,15 +9,12 @@ pool:
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'AzureRmPipeline-conn'
+    deploymentScope: 'Subscription'
+    azureResourceManagerConnection: 'Sub4(1371234f-bae7-4c6e-9e99-6966c705552c)'
     subscriptionId: '1371234f-bae7-4c6e-9e99-6966c705552c'
-    action: 'Create Or Update Resource Group'
-    resourceGroupName: 'AzureRmPipeline-rg'
     location: 'Central US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json?token=AJLC4JDLSDBBBRPWKVSU5ITATWKBO'
-    overrideParameters: '-projectName TsarasAzureTemplate'
+    csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json?token=AJLC4JGPXOQGD3XDT567KYDATWMPY'
+    overrideParameters: '-projectName  tsaraspipeline'
     deploymentMode: 'Incremental'
-    deploymentName: 'DeployPipelineTemplate'
-
+    deploymentName: 'tsarasAzureDep'
