@@ -17,7 +17,6 @@ steps:
     location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json'
-    csmParametersFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/linkedStorageAccount.json'
     overrideParameters: '-projectName  DevOpsLab1'
     deploymentMode: 'Incremental'
     deploymentName: 'tsarasAzureDep'
