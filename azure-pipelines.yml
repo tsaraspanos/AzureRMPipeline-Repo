@@ -14,7 +14,7 @@ steps:
     subscriptionId: '1371234f-bae7-4c6e-9e99-6966c705552c'
     location: 'North Europe'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json?token=AJLC4JGPXOQGD3XDT567KYDATWMPY'
+    csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json'
     overrideParameters: '-projectName  tsarastem'
     deploymentMode: 'Incremental'
     deploymentName: 'tsarasAzureDep'
