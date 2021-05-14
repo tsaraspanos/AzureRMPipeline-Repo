@@ -9,12 +9,14 @@ pool:
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    deploymentScope: 'Subscription'
+    deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Sub4(1371234f-bae7-4c6e-9e99-6966c705552c)'
     subscriptionId: '1371234f-bae7-4c6e-9e99-6966c705552c'
-    location: 'North Europe'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'AzureRMPipeline-rg'
+    location: 'West Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName  tsarastem'
+    overrideParameters: '-projectName  DevOpsLab1'
     deploymentMode: 'Incremental'
     deploymentName: 'tsarasAzureDep'
