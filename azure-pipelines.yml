@@ -12,7 +12,7 @@ steps:
     deploymentScope: 'Subscription'
     azureResourceManagerConnection: 'Sub4(1371234f-bae7-4c6e-9e99-6966c705552c)'
     subscriptionId: '1371234f-bae7-4c6e-9e99-6966c705552c'
-    location: 'Central US'
+    location: 'North Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/tsaraspanos/AzureRMPipeline-Repo/master/CreateWebApp/azuredeploy.json?token=AJLC4JGPXOQGD3XDT567KYDATWMPY'
     overrideParameters: '-projectName  tsarastem'
